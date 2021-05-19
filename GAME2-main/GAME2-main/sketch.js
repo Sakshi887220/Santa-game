@@ -305,25 +305,11 @@ chimneyGroup.add(chimney)
 
 function gifts(){
   gift=createSprite(displayWidth/2-100,displayHeight/2-150)
-  var ran=Math.round(random(1,5))
+ 
 gift.visible=false
-  switch(ran){
-    case 1 :gift.addImage(giftimg) 
-    break
-    
-    case  2 :gift.addImage(giftimg2)
-    break
-    
-    case 3 :gift.addImage(giftimg3)
-    break
-    
-    case 4 :gift.addImage(giftimg4)
-    break
+ 
+gift.addImage(giftimg) 
 
-    case 5 :gift.addImage(giftimg5)
-    break
-    default:break
-    }
  
  gift.x=santa.x
  gift.scale=0.5;
